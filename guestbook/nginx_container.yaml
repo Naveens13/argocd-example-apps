@@ -1,16 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nginx_container
-  creationTimestamp: null
+  name: nginx_pod_from_agrocd
   labels:
     run: pod
-  name: pod
 spec:
   containers:
-  - args:
-    - nginx-container
-    image: nginx
+  - image: nginx
     name: pod
     resources : {}
   dnsPolicy: ClusterFirst
